@@ -1,0 +1,10 @@
+<?php
+
+namespace Illuminate\Support;
+
+/**
+ * @method object toSlugValue()
+ **/
+class Collection {
+    public static function toSlugValue():object {}
+}

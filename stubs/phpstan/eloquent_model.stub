@@ -1,0 +1,31 @@
+<?php
+
+namespace Illuminate\Database\Eloquent;
+
+/**
+ * Summary of Model
+ * @method int increment(string $column, float|int $amount = 1, array<string> $extra = [])
+ * @method int decrement(string $column, float|int $amount = 1, array<string> $extra = [])
+ */
+class Model
+{
+    /**
+     * Increment a column's value by a given amount.
+     *
+     * @param  string  $column
+     * @param  float|int  $amount
+     * @param  array<string>  $extra
+     * @return int
+     */
+    public function increment(string $column, float|int $amount = 1, array $extra = []){}
+
+    /**
+     * Decrement a column's value by a given amount.
+     *
+     * @param  string  $column
+     * @param  float|int  $amount
+     * @param  array<string>  $extra
+     * @return int
+     */
+    public function decrement(string $column, float|int $amount = 1, array $extra = []){}
+}

@@ -1,0 +1,30 @@
+parameters:
+    level: 8
+    paths:
+        - public
+        - app
+        - bootstrap
+        - routes
+
+    bootstrapFiles:
+        - vendor/autoload.php
+    
+    stubFiles:
+        - stubs/phpstan/application.stub
+        - stubs/phpstan/collection.stub
+        - stubs/phpstan/auth_user.stub
+        - stubs/phpstan/eloquent_model.stub
+        - stubs/phpstan/view.stub
+
+    reportUnmatchedIgnoredErrors: true
+    ignoreErrors:
+        - '#Constant IS_API_REQUEST not found#'
+        - '#Access to an undefined property App\\Models\\[a-zA-Z0-9]+::[a-zA-Z0-9\$]+#'
+        - '#Access to an undefined property Illuminate\\Http\\Request::[a-zA-Z0-9\$]+#'
+        - '#Access to an undefined property App\\Http\\Requests\\[a-zA-Z0-9\\]+::[a-zA-Z0-9\$]+#'
+        #- '#Result of static method App\\Services\\ResponseService\\Response::[a-zA-Z0-9]+\(\) \(void\) is used#'
+        #- '#Call to an undefined method App\\Models\\[a-zA-Z0-9]+::[a-zA-Z0-9\\_]()#'
+        - '#Call to an undefined static method App\\Models\\[a-zA-Z0-9]+::[a-zA-Z0-9\\_]()#'
+        #- '#Call to protected method [a-zA-Z0-9\\_]() of class Illuminate\\Database\\Eloquent\\Model#'
+        - '#Method App\\[a-zA-Z0-9\\_]+::[a-zA-Z0-9]+\(\) return type has no value type specified in iterable type array#'
+        

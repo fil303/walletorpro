@@ -1,0 +1,10 @@
+<?php
+
+namespace Illuminate\Foundation;
+
+/**
+ * @property mixed $app
+ **/
+class Application {
+
+}

@@ -1,0 +1,7 @@
+*
+!.gitignore
+!/payment_method
+!landing-hero-section-image.png
+!landing-about-section-image.png
+!landing-service-section-image.png
+!landing-faq-section-image.png

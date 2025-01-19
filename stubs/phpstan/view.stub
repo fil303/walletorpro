@@ -1,0 +1,10 @@
+<?php
+
+namespace Illuminate\Contracts\View;
+
+/**
+ * @method string render()
+ **/
+class View {
+    //
+}
